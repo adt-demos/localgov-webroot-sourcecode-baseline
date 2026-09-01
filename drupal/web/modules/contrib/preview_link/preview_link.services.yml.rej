@@ -1,0 +1,9 @@
+--- preview_link.services.yml
++++ preview_link.services.yml
+@@ -54,3 +54,6 @@ services:
+   logger.channel.preview_link:
+     parent: logger.channel_base
+     arguments: [ 'preview_link' ]
++  plugin.manager.preview_link_autopopulate:
++    class: Drupal\preview_link\PreviewLinkAutopopulatePluginManager
++    parent: default_plugin_manager

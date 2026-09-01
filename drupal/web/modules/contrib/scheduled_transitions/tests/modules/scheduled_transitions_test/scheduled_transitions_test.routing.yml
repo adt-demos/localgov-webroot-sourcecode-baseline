@@ -1,0 +1,14 @@
+# Keep this until Drupal 10 required then add to handlers.route_provider:
+# "revision" = \Drupal\Core\Entity\Routing\RevisionHtmlRouteProvider::class,
+entity.st_entity_test.revision:
+  path: '/st_entity_test/{st_entity_test}/revision/{st_entity_test_revision}/view'
+  defaults:
+    _controller: '\Drupal\Core\Entity\Controller\EntityRevisionViewController'
+  options:
+    parameters:
+      st_entity_test:
+        type: entity:st_entity_test
+      st_entity_test_revision:
+        type: entity_revision:st_entity_test
+  requirements:
+    _access: 'TRUE'

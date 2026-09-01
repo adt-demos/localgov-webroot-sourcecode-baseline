@@ -1,0 +1,13 @@
+name: 'Group Alert banner'
+type: module
+description: 'Enables Group functionality for Alert banners.'
+package: 'LocalGov Drupal'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - group:group
+  - localgov_alert_banner:localgov_alert_banner
+
+# Information added by Drupal.org packaging script on 2025-12-01
+version: '1.9.1'
+project: 'localgov_alert_banner'
+datestamp: 1764632206
